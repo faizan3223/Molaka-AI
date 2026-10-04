@@ -1,0 +1,6 @@
+{
+  "name": "Claude Studio — Next-Gen AI & Live Artifacts",
+  "description": "World-class AI interface inspired by Claude, featuring real-time intelligent chat, interactive code Artifacts with live execution, image synthesis, and cinematic visual generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

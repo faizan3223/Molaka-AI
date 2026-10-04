@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --claude-bg: #FAF8F5;
+    --claude-bg-subtle: #F3EFEA;
+    --claude-surface: #FFFFFF;
+    --claude-border: #E8E2D9;
+    --claude-text: #242424;
+    --claude-text-muted: #6E6D6A;
+    --claude-terracotta: #C85A32;
+    --claude-terracotta-hover: #B54D28;
+    --claude-terracotta-subtle: #FBEFE9;
+  }
+
+  .dark {
+    --claude-bg: #1B1A18;
+    --claude-bg-subtle: #23221F;
+    --claude-surface: #262421;
+    --claude-border: #383530;
+    --claude-text: #ECE8E1;
+    --claude-text-muted: #A09B93;
+    --claude-terracotta: #E0734C;
+    --claude-terracotta-hover: #F0835C;
+    --claude-terracotta-subtle: #33251E;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-serif-claude {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono-claude {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.28);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
